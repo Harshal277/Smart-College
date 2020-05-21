@@ -1,0 +1,180 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;    
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+.search-bar{
+    margin: 10px 0;
+    width: 100%;
+    background: #ffffff;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#searchbox{
+    outline:none;
+    border: none;
+    border: 1px solid #0589f5;  
+}
+.dashboard{
+    background: #fafafa;
+    padding: 0;
+}
+button{
+    padding: 0 20px;
+    border: none;
+    background: white;
+    border: 1px solid #606061;
+    color: #3a3a3a;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 40;
+}
+button:hover{
+    background: #0088f7;
+    border: 1px solid #49a8f7;
+    color: white; 
+    cursor: pointer;
+}
+input{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#year{
+    border-radius: 5px;
+    padding: 0 10px;
+}
+#row{
+    margin: 10px 40px;
+    border-radius:5px 5px 0px 0px;    
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #5c5c5c;
+    color: #141414;
+    padding: 5px 40px;
+    font-size: 16px;
+}
+thead td{
+    background: #464646;
+    color: white;
+    font-size: 17px;
+    padding: 15px 40px;
+    border-color: white;
+}
+thead td:nth-child(2){
+    width: 10vw;
+}
+thead td:nth-child(3){
+    width: 25vw;
+    text-align: center;
+}
+td:nth-child(3){
+    text-align: left;
+    padding-left: 20px;
+}
+thead td:nth-child(4){
+    width: 10vw;
+}
+#view{
+    width: 100px;
+    font-size: 14px;
+    font-family: sans-serif;
+    height: 5vh;
+}
+.center{
+    text-align: center;
+}
+table tr:nth-of-type(even){
+    background-color: #ececec;
+}
+table tr:nth-of-type(odd){
+    background-color: #fff;
+}
+#msg{
+    background: rgb(252, 213, 213);    
+    color: rgb(250, 26, 26);
+    padding: 15px 50px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+@media(max-width:600px) {
+    body{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .top-nav {
+        height: 70px;
+    }
+
+    .top-nav .banner {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .top-nav .title {
+        flex: 6;
+        text-align: left;
+        padding-left: 70px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 45px;
+    }
+
+    .search-bar #year{
+        padding: 5px;
+    }
+    .search-bar input{
+        padding: 10px;
+        width: 150px;
+    }
+    .search-bar button span{
+        display: none;
+    }
+    p{
+        font-size: 15px;
+    }
+    #row{
+        margin: 0;
+    }
+    td{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    thead td{
+        font-size: 13px;
+        padding: 15px 20px;
+    }    
+    thead td:nth-child(1){
+        padding: 5px;
+    }
+    thead td:nth-child(2){
+        padding: 5px
+    }
+    thead td:nth-child(3){
+        padding: 0 40px;
+    }
+    td:nth-child(3){
+        padding-left: 10px;
+    }
+    thead td:nth-child(4){
+        padding: 5px;
+    }
+    #view{
+        width: 70px;
+        font-size: 12px;
+        font-family: sans-serif;
+        height: 4vh;
+    }
+}

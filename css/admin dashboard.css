@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+.dashboard {
+    padding: 10px;
+    flex: 8;
+}
+
+/* Card Formating */
+.row {
+    display: flex;
+    margin: 5px;
+}
+
+.card {
+    margin: 10px 15px;
+    height: 20vh;
+    flex: 1;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.view-details {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+#card-timetable {
+    background-image: linear-gradient(#f77ed4, #9730f7);
+}
+#card-timetable::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f073"; 
+    transform: rotate(10deg);
+    padding: 5% 6%;
+    font-size: 60px;
+    color: #ffffffb0;
+}
+#card-timetable:hover {
+    background-image: linear-gradient(#f83ac2, #8b17f8);
+}
+#card-docs{
+    background: linear-gradient(#3eec9b, #2071c2);
+}
+#card-docs::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f07c "; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-docs:hover{
+    background: linear-gradient(#2be990 15%, #097cf0);
+}
+
+#card-exam {
+    background: linear-gradient(#d8e05f, #129b4b);
+}
+#card-exam::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f02d"; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-exam:hover {
+    background: linear-gradient(#cddb0b, #008552);
+}
+
+#card-notice {
+    background: linear-gradient(#3eec9b, #2071c2);
+}
+#card-notice::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f0a2"; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-notice:hover {
+    background: linear-gradient(#2be990 15%, #097cf0);
+}
+
+#card-deparment {
+    background: linear-gradient(#e05c98, #fa2545);
+}
+#card-deparment::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f0f7"; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-deparment:hover {
+    background: linear-gradient(#ec2b82, #fa2c2c);
+}
+
+#card-students {
+    background: linear-gradient(#4fd2f0, #1660eb);
+}
+#card-students::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f19d"; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-students:hover {
+    background: linear-gradient(#00d2ff, #3a47d5);
+}
+
+#card-staff {
+    background-image: linear-gradient(rgb(255, 157, 45), rgb(253, 69, 40));
+}
+#card-staff::before{
+    font-family: FontAwesome; 
+    float: right;
+    content: "\f0c0"; 
+    font-size: 60px;
+    padding: 5% 6%;
+    color: #ffffffb0;
+    transform: rotate(10deg);
+}
+#card-staff:hover {
+    background-image: linear-gradient(rgb(247, 138, 14), rgb(253, 41, 8));
+}
+
+
+@media(max-width:600px) {
+    body{
+        overflow-y: scroll;
+    }
+   
+    .side-menu {
+        flex: 0;
+        display: none;
+    }
+
+    .top-nav {
+        height: 70px;
+        background: #313131;
+        color: white;
+    }
+
+    .top-nav .title {
+        flex: 6;
+        text-align: left;
+        padding-left: 70px;
+    }
+
+    h3 {
+        font-weight: 400;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px;
+        flex-basis: 15vh;
+        border-radius: 5px;
+        padding-bottom: 10px;
+    }
+
+    .profile {
+        flex: 3;
+    }
+
+    .top-nav .profile .pic {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .top-nav .profile .pic #user {
+        display: none;
+    }
+
+    .top-nav .profile .pic {
+        background: transparent;
+    }
+    .top-nav .profile .pic:hover {
+        background: transparent;
+        color: white;
+    }
+
+    .top-nav .profile .pic #bar {
+        display: block;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .profile-menu {
+        transform: translateX(-25vw);
+    }
+}

@@ -1,0 +1,47 @@
+#dialog{
+    background:rgba(0,0,0,0.3);   
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: none;
+    right: 0;
+    bottom: 0;
+}
+.progressDialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.38);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#txt{
+    text-align: center;
+    padding: 30px;
+    margin: 5% 0;
+    font-size: 30px;
+}
+#backbar{      
+    border-radius: 5px;      
+    position: absolute;
+    width: 97%;
+    height: 2%;
+    margin:10px;
+    background: rgba(0,0,0,0.1);
+}
+#bar{
+    position: absolute;
+    width: 1%;
+    border-radius: 5px;      
+    transition: ease-in;
+    height: 2%;
+    margin:10px;
+    background: dodgerblue;
+}

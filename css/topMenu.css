@@ -1,0 +1,77 @@
+/* Top Menu */
+.top-nav {
+    display: flex;
+    background: rgb(255, 255, 255);
+    color: #000;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);  
+}
+
+.top-nav .navigation {
+    flex: 5;
+}
+
+.top-nav .profile{
+    flex:5;
+    margin: 15px;
+    display: flex;
+    font-size: 15px;
+    justify-content: flex-end;
+}
+
+.navigation{
+    margin: 15px;
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 25px;
+    font-weight: 400;
+}
+
+span {
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0482f8;
+    cursor: pointer;
+}
+
+.profile a{
+    color: grey;
+}
+
+.navigation svg, .navigation a, .profile svg{
+    padding: 0 5px;
+}
+
+a:hover {
+    color: #0482f8;
+    cursor: pointer;
+}
+
+#edit-profile{
+    margin: 0 10px;
+}
+
+.active-nav{
+    color: #0986fc;
+    font-weight: 500;
+}
+
+.active-sub-nav{
+    color: #196bb8;
+    font-weight: 500;
+
+}
+
+#edit-profile:hover{
+    color: #0482f8;
+    cursor: pointer;
+}
