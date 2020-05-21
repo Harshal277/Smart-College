@@ -24,8 +24,8 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
-DROP DATABASE IF EXIST `collge_mgmt`
-CREATE DATABASE `college_mgmt`
+DROP DATABASE IF EXIST `collge_mgmt`;
+CREATE DATABASE `college_mgmt`;
 
 --
 -- Table structure for table `admin`
